@@ -28,7 +28,7 @@ const consultarClima = () => {
       //Llamada de API
       axios
         .get(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=553c2b5dfae5f5b06623e9eda43df938&lang=es&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid={API_KEY}&lang=es&units=metric`
         )
         .then((response) => {
           const clima = response.data.weather[0].description;
