@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal{
+  font-size: 3em;
+  text-align: center;
+}
+.sub-container{
+  grid-template-columns: repeat(auto,3);
+  grid-gap: 300px;
+}

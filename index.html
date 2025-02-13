@@ -1,0 +1,54 @@
+<!-- 
+Consumo de API de Clima
+Por :  Paula Nicole Pachon e Ivan David Sierra
+Ingenieria de Software - 15A
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/styles.css">
+      </head>
+  <body>
+
+    <h1 class="titulo-principal">Informe de Clima</h1>
+    <p id="fuera"></p>
+    </p>
+            <div class="col text-center parrafoI">
+                <!-- Botón para acceder a la geolocalización -->
+                <button id="ubicarme" class="btn btn-info ">Mostrar mi clima</button>
+            </div>
+            <section class="container text-center" id="section">
+                    <div class="sub-container">
+                          <div class="card" style="width: 18rem;">
+                              <img src="./assets/img/temperatura.jpg" class="card-img-top" alt="temperatura">
+                              <div class="card-body">
+                                <p class="card-text " id="temperatura"></p>
+                          </div>
+                    </div>
+                  <div class="sub-container">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/clima.jpg" class="card-img-top" alt="clima">
+                                <div class="card-body">
+                                  <p class="card-text" id="clima"></p>
+                            </div>
+                    </div>
+                    <div class="sub-container">
+                          <div class="card" style="width: 18rem;">
+                              <img src="./assets/img/humedad.jpg" class="card-img-top" alt="humedad">
+                              <div class="card-body">
+                                <p class="card-text" id="humedad"></p>
+                          </div>
+                    </div>
+            </section>
+</div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
